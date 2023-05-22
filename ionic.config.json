@@ -1,0 +1,7 @@
+{
+  "name": "daugiaTA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
