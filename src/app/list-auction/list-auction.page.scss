@@ -1,0 +1,21 @@
+.temp p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+
+color: #A6A5A5;
+}
+.temp p:first-child{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 20px;
+color: #FA4A0C;
+border-bottom: 3px solid;
+}
+.temp{
+    justify-content: space-between;
+}

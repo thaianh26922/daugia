@@ -1,0 +1,247 @@
+<ion-content [fullscreen]="true">
+  <div>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        padding: 0 5%;
+        justify-content: space-between;
+      "
+    >
+      <i class="fa-solid fa-caret-left"></i>
+      <h3>Thời gian hết phiên : <span style="color: red">17: 30</span></h3>
+      <i class="fa-solid fa-filter-circle-xmark"></i>
+    </div>
+    <div
+      style="
+        width: 90%;
+        margin-left: 5%;
+        padding: 5% 5%;
+        text-align: center;
+        border-radius: 23px;
+        background-color: #e5e5e5;
+        margin-top: 5%;
+      "
+    >
+      <img
+        style="width: 100%; border-radius: 13px; margin-bottom: 10px"
+        src="assets/image/ford-everest-titanium-2022-mau-trang-icon.jpg"
+        alt=""
+      />
+      
+      <div style="background-color:  #FF6027; color: white; padding:10px 50px; border-radius: 13px; width: 100%;">
+        <span class="countdown-value" *ngIf="remainingTime | async as remainingTime">
+          {{ formatTime(remainingTime) }}
+        </span>
+      </div>
+    </div>
+   
+    
+    <div style="padding: 0 5%" class="detail">
+      <h1>Chi tiết sản phẩm</h1>
+      <div class="information-product">
+        <div>
+          <h3>Tên tài sản</h3>
+          <p>XE OTO FORD EVEREST BIỂN KIỂM SOÁT 30A - 00000 ĐÃ QUA SỬ DỤNG</p>
+        </div>
+        <div>
+          <h3>Mã tài sản</h3>
+          <p>MTS00000038</p>
+        </div>
+        
+        <div>
+          <h3>Năm sản xuất</h3>
+          <p>2008</p>
+        </div>
+        <div>
+          <h3>Nước sản xuất</h3>
+          <p>Việt Nam</p>
+        </div>
+        <div>
+          <h3>Bước giá</h3>
+          <p>1.000.000</p>
+        </div>
+      </div>
+      <!-- <img style="margin: 20px 0" src="assets/image/Component 17.png" alt="" /> -->
+    </div>
+    
+    <div id="countdown-wrap"  style="padding: 0 5% ; margin-top: 5%;">
+      <input
+        type="radio"
+        class="radio"
+        name="progress"
+        value="five"
+        id="five"
+      />
+      <label for="five" class="label">5%</label>
+
+      <input
+        type="radio"
+        class="radio"
+        name="progress"
+        value="twentyfive"
+        id="twentyfive"
+        checked
+      />
+      <label for="twentyfive" class="label">25%</label>
+
+      <input
+        type="radio"
+        class="radio"
+        name="progress"
+        value="fifty"
+        id="fifty"
+      />
+      <label for="fifty" class="label">50%</label>
+
+      <input
+        type="radio"
+        class="radio"
+        name="progress"
+        value="seventyfive"
+        id="seventyfive"
+      />
+      <label for="seventyfive" class="label">75%</label>
+
+      <input
+        type="radio"
+        class="radio"
+        name="progress"
+        value="onehundred"
+        id="onehundred"
+      />
+      <label for="onehundred" class="label">100%</label>
+
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <div  style="padding: 0 5%;">
+      <h2>Chi tiết cuộc đấu giá</h2>
+      <div style="padding: 0 5%; display: flex; justify-content: space-between;">
+      
+        <div>
+          <h3>STT</h3>
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+        <div>
+          <h3>Số tiền trả</h3>
+          <p>5.320.000.000</p>
+          <p>5.040.000.000</p>
+          <p>5.000.000.000</p>
+        </div>
+        <div>
+          <h3>Thời gian trả</h3>
+          <p>14:40:44 27/06/2022</p>
+          <p>14:40:44 27/06/2022</p>
+          <p>14:40:44 27/06/2022</p>
+        </div>
+      </div>
+    </div>
+    <div style=" display: flex; justify-content: center;">
+      <button
+        style="
+          font-family: 'Arial';;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+background: #ff0000;
+border-radius: 18px;
+padding: 10px 20px;
+margin: 5% 0;
+        "
+      >
+      15.000.000 USD
+      </button>
+    </div>
+    <h3 style="font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    
+    color: #000000;">Tài sản tương tự</h3>
+    <div style="padding: 0 5%; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <div style="width: 45%;">
+        <img style="width: 100%;" src="assets/image/ford.png" alt="">
+        <h3 style="font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+        
+        
+        color: #000000;">Nhà 1</h3>
+        <p style="font-weight: 300;
+        font-size: 9px;
+        line-height: 11px;
+        /* identical to box height */
+        
+        
+        color: #898989;">Giá khỏi điểm <span style="color: #C30000;;">500USD</span></p>
+      </div>
+      <div style="width: 45%;">
+        <img style="width: 100%;" src="assets/image/ford.png" alt="">
+        <h3 style="font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+        
+        
+        color: #000000;">Nhà 2</h3>
+        <p style="font-weight: 300;
+        font-size: 9px;
+        line-height: 11px;
+        /* identical to box height */
+        
+        
+        color: #898989;">Giá khỏi điểm <span style="color: #C30000;;">500USD</span></p>
+      </div>
+      <div style="width: 45%;">
+        <img style="width: 100%;" src="assets/image/ford.png" alt="">
+        <h3 style="font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+        
+        
+        color: #000000;">Nhà 3</h3>
+        <p style="font-weight: 300;
+        font-size: 9px;
+        line-height: 11px;
+        /* identical to box height */
+        
+        
+        color: #898989;">Giá khỏi điểm <span style="color: #C30000;;">500USD</span></p>
+      </div>
+      <div style="width: 45%;">
+        <img style="width: 100%;" src="assets/image/ford.png" alt="">
+        <h3 style="font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+        
+        
+        color: #000000;">Nhà 4</h3>
+        <p style="font-weight: 300;
+        font-size: 9px;
+        line-height: 11px;
+        /* identical to box height */
+        
+        
+        color: #898989;">Giá khỏi điểm <span style="color: #C30000;;">500USD</span></p>
+      </div>
+    </div>
+    
+  </div>
+  
+</ion-content>

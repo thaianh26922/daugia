@@ -1,0 +1,116 @@
+
+<ion-content [fullscreen]="true">
+  <div style="padding:5% 5%;">
+    <div style="display: flex; align-items: center; font-size: 23px; font-weight: 700; border-bottom: 1px solid rgba(0, 0, 0, 0.29); padding-bottom: 10%;">
+      <i class="fa-solid fa-bars"></i>
+      <span style="margin-left: 10%;">Danh sách cuộc đấu giá</span>
+    </div>
+    <div style="display: flex;" class="temp">
+      <p>Sắp đấu giá</p>
+      <p>Đang diễn ra</p>
+      <p>Đã kết thúc</p>
+    </div>
+    <div>
+      <div
+        style="
+          width: 90%;
+          margin-left: 5%;
+          padding: 5% 5%;
+          text-align: center;
+          border-radius: 23px;
+          background-color: #e5e5e5;
+        "
+      >
+        <img style="width: 100%" src="assets/image/Rectangle 71.png" alt="" />
+        <a
+          style="
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-decoration: none;
+            color: #3c3c3c;
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 700;
+            /* font-size: 23px; */
+            line-height: 21px;
+            margin-top: 5%;
+          "
+          href=""
+          >Các vật tư thiết bị được thu hồi đánh giá phế liệu từ các công
+          trình điện (chất lượng X&lt;50%) đem bán thanh lý năm 2022 - đợt 1
+          (tồn kho đến ngày 31/05/2022); Gồm Lô 2: Vật tư thiết bị thu hồi
+          thanh lý có chứa chất thải nguy hại</a
+        >
+        <div>
+          <div style="margin-top: 5%;">
+            <span
+              style="
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 13px;
+                color: #8f8f8f;
+              "
+              >Ngày mở sau:   <span class="countdown-value" *ngIf="remainingTime | async as remainingTime">
+                {{ formatTime(remainingTime) }}
+              </span></span
+            >
+        </div>
+        </div>
+      </div>
+      <div
+      style="
+        width: 90%;
+        margin-left: 5%;
+        padding: 5% 5%;
+        text-align: center;
+        border-radius: 23px;
+        background-color: #e5e5e5;
+        margin-top: 5%;
+      "
+    >
+      <img style="width: 100%; border-radius: 13px; margin-bottom: 10px;" src="assets/image/Rectangle 71 (1).png" alt="" />
+      <a
+        style="
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          text-decoration: none;
+          color: #3c3c3c;
+          font-family: 'Arial';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 23px;
+          line-height: 21px;
+          margin-top: 5%;
+        "
+        href=""
+        >Các vật tư thiết bị được thu hồi đánh giá phế liệu từ các công
+        trình điện (chất lượng X&lt;50%) đem bán thanh lý năm 2022 - đợt 1
+        (tồn kho đến ngày 31/05/2022); Gồm Lô 2: Vật tư thiết bị thu hồi
+        thanh lý có chứa chất thải nguy hại</a
+      >
+      <div style="margin-top: 5%;">
+          <span
+            style="
+              font-family: 'Arial';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 13px;
+              color: #8f8f8f;
+            "
+            >Ngày mở: 06/05/2021 15:00:00</span
+          >
+      </div>
+      
+    </div>
+    </div>
+  </div>
+</ion-content>

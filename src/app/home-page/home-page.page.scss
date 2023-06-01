@@ -1,0 +1,32 @@
+.searchbar-input-container{
+    background-color: red;
+}
+.menu-tag {
+    width: 100%;
+    padding:0 5% !important;
+    // background-color: red;
+}
+.menu-tag li{
+    list-style: none;
+    // width: 30%;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+
+color: #A6A5A5;
+}
+.menu-tag li:first-child{
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FA4A0C;
+    border-bottom: 3px solid #FA4A0C;
+}
+.menu-tag{
+    justify-content: space-between;
+}
